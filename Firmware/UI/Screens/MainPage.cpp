@@ -60,7 +60,10 @@ void MainPage::DigitalGainButtonHandler(void* sender)
 
 void MainPage::Draw(Painter* painter)
 {
-    painter->DrawImage(apertus_logo.pixel_data, 58, 89, apertus_logo.width, apertus_logo.height);
+
+    painter->DrawImage(apertus_text.pixel_data, 58, 89, apertus_text.width, apertus_text.height);
+    
+    // painter->DrawImage(apertus_logo.pixel_data, 58, 89, apertus_logo.width, apertus_logo.height);
 
     painter->DrawCircle(100, 100, 20, 0x0);
 
